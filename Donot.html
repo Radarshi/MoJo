@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .head{
+            font-size: 60px;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #1E9600;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .gaali{
+            font-size: 40px;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: white;
+        }
+        .video{
+            border: 1px solid white;
+            width: 500px;
+            height: 700px;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .laugh{
+            color: white;
+            position: absolute;
+            top: 195%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .back{
+            border: 1px solid white;
+            width: 180px;
+            height: 50px;
+            border-radius: 24px;
+            position: absolute;
+            top: 160%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            animation: hideAnimation 10s ease-in 0s;
+            animation-fill-mode: forwards;
+            cursor: pointer;
+        }
+        @keyframes hideAnimation {
+            to{
+                visibility: hidden;
+                width: 0;
+                height: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="head">Jo clone mara </h1>
+    <h2 class="gaali">Andi mandi sandi...</h2>
+        <div class="video">
+            <video width="500px" height="700px" preload="true" autoplay loop>
+            <source src="./src/assets/rickroll.mp4" type="video/mp4"/>
+            </video>
+        </div>
+
+        <h1 class="laugh">Tu hasa naaa 😁😁😁😁😁😁😁</h1>
+        <a href="."><button class="back">Click me before its too late</button></a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.pin-me{
+    width: 20px;
+    position: relative;
+}
+.like-me{
+    width: 20px;
+}
+.card-body{
+    background-color: rgb(165, 148, 148);
+    width: 100%;
+}
+.play{
+    width: 100%;
+}
+.card-title{
+    margin-bottom: 5px;
+}
+h5 div button{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
