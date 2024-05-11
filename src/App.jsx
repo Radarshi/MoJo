@@ -108,7 +108,7 @@ function App() {
             return <Card key={element.id} element={element} />;
           })}
         </div>
-        <div className="row" hidden={tracks?.length === 0}>
+        <div className="row"  hidden={tracks?.length === 0}>
           <div className="col">
             <button
               onClick={() => {

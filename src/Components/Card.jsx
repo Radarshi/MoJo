@@ -20,7 +20,7 @@ function Card({ element }) {
       setpinnedMusic(updatedPinnedMusic);
       localStorage.setItem("pinnedMusic", JSON.stringify(updatedPinnedMusic));
     } else {
-      if (pinnedMusic.length >= 4) {
+      if (pinnedMusic?.length >= 4) {
       }
       updatedPinnedMusic = pinnedMusic;
       updatedPinnedMusic.push(element);

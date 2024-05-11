@@ -16,7 +16,7 @@ function PinnedMusic() {
   return (
     <div>
       <div className="container">
-        {pinnedMusic.length === 0 ? (
+        {pinnedMusic?.length === 0 ? (
           <div className="row ">
             <div className="col ">
               <h3 className="py-5 text-center ">
@@ -40,7 +40,7 @@ function PinnedMusic() {
           </div>
         ) : (
           <div className="row ">
-            {pinnedMusic.map((element) => {
+            {pinnedMusic?.map((element) => {
               return <Card key={element.id} element={element} />;
             })}
           </div>

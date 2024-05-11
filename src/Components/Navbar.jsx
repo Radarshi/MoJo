@@ -25,14 +25,14 @@ const Navbar = ({ keyword, handleKeyPress, setKeyword, fetchMusicData }) => {
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               className="btn btn-secondary btn-sm mx-1" >Pinned
-              <i className="bi bi-pin-angle-fill"></i> {pinnedMusic.length}
+              <i className="bi bi-pin-angle-fill"></i> {pinnedMusic?.length}
             </button>
             <button
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#likedMusicModal"
               className="btn btn-secondary btn-sm mx-1" >Liked
-              <i className="bi bi-heart-fill"></i> {likedMusic.length}
+              <i className="bi bi-heart-fill"></i> {likedMusic?.length}
             </button>
           </div>
 
