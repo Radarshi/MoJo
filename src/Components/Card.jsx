@@ -15,7 +15,7 @@ function Card({ element }) {
     let pinnedMusic = localStorage.getItem("pinnedMusic");
     pinnedMusic = JSON.parse(pinnedMusic);
     let updatedPinnedMusic = [];
-    if (pinnedMusic.some((item) => item.id === element.id)) {
+    if (pinnedMusic?.some((item) => item.id === element.id)) {
       updatedPinnedMusic = pinnedMusic.filter((item) => item.id !== element.id);
       setpinnedMusic(updatedPinnedMusic);
       localStorage.setItem("pinnedMusic", JSON.stringify(updatedPinnedMusic));
@@ -33,7 +33,7 @@ function Card({ element }) {
     let likedMusic = localStorage.getItem("likedMusic");
     likedMusic = JSON.parse(likedMusic);
     let updatedLikedMusic = [];
-    if (likedMusic.some((item) => item.id === element.id)) {
+    if (likedMusic?.some((item) => item.id === element.id)) {
       updatedLikedMusic = likedMusic.filter((item) => item.id !== element.id);
       setlikedMusic(updatedLikedMusic);
       localStorage.setItem("likedMusic", JSON.stringify(updatedLikedMusic));
@@ -65,7 +65,7 @@ function Card({ element }) {
           <h5 className="card-title ">
             {element.name}
             <div className="add-options d-flex align-items-start">
-              {pinnedMusic.some((item) => item.id === element.id) ? (
+              {pinnedMusic?.some((item) => item.id === element.id) ? (
                 <button
                   onClick={handlePin}
                   className="btn btn-outline-dark mx-1">
@@ -78,7 +78,7 @@ function Card({ element }) {
                   <img src={Pin} alt="" className="pin-me"/>
                 </button>
               )}
-              {likedMusic.some((item) => item.id === element.id) ? (
+              {likedMusic?.some((item) => item.id === element.id) ? (
                 <button onClick={handleLike} className="btn btn-outline-dark">
                   <img src={like} alt=""  className="like-me"/>
                 </button>
