@@ -108,7 +108,7 @@ function App() {
             return <Card key={element.id} element={element} />;
           })}
         </div>
-        <div className="row" hidden={tracks.length === 0}>
+        <div className="row" hidden={tracks?.length === 0}>
           <div className="col">
             <button
               onClick={() => {
@@ -154,8 +154,8 @@ function App() {
               ><img src={Gitlogo} alt="GitHub" className='git'/>
                 <i className="bi bi-github mx-2 text-white"></i>Github
               </a>
-              <h3 className="mt-7">Listen Whenver Whatever Wherever you want</h3>
-              <hr />
+              <h3 className=" listen mt-7">Listen Whenver Whatever Wherever you want</h3>
+              <hr className="hr"/>
               <div>
               <a href="./Donot.html" title="paper icons" className="term" target="_blank">
               <p className="terms">Terms & Conditions</p></a>

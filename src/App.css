@@ -36,25 +36,26 @@
     transform: rotate(360deg);
   }
 }
-.git{
+.git {
   width: 30px;
- margin-left: 10px;
+  margin-left: 10px;
 }
-.btn{
+.btn {
   width: 74px;
 }
-.mojo,.dis{
+.mojo,
+.dis {
   position: absolute;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.term{
+.term {
   text-decoration: none;
 }
-.terms{
+.terms {
   position: absolute;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-size: 15px;
   margin-top: 20px;
 }

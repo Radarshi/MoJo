@@ -52,7 +52,7 @@ const Navbar = ({ keyword, handleKeyPress, setKeyword, fetchMusicData }) => {
                 setResultOffset(0);
                 fetchMusicData();
               }}
-              className="btn btn-outline-success"> Search
+              className="btn  search btn-outline-success"> Search
             </button>
           </div>
         </div>
