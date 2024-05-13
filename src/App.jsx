@@ -157,8 +157,7 @@ function App() {
               <h3 className=" listen mt-7">Listen Whenver Whatever Wherever you want</h3>
               <hr className="hr"/>
               <div>
-              <a href="./Donot.html" title="paper icons" className="term" target="_blank">
-              <p className="terms">Terms & Conditions</p></a>
+              <p className="terms"><a href="./Donot.html" title="paper icons" className="term" target="_blank">Terms & Conditions</a></p>
               </div>
             </div>
           </div>
