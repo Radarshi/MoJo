@@ -5,6 +5,8 @@ import Pin from '../assets/pin.png';
 import './Card.css';
 
 function Card({ element }) {
+
+  console.log("ELEMENT ===>", element)
   const musicContext = useContext(MusicContext);
   const likedMusic = musicContext.likedMusic;
   const setlikedMusic = musicContext.setLikedMusic;
@@ -15,7 +17,7 @@ function Card({ element }) {
     let pinnedMusic = localStorage.getItem("pinnedMusic");
     pinnedMusic = JSON.parse(pinnedMusic);
     let updatedPinnedMusic = [];
-    if (pinnedMusic?.some((item) => item.id === element.id)) {
+    if (pinnedMusic?.some((item) => item.id === element?.id)) {
       updatedPinnedMusic = pinnedMusic.filter((item) => item.id !== element.id);
       setpinnedMusic(updatedPinnedMusic);
       localStorage.setItem("pinnedMusic", JSON.stringify(updatedPinnedMusic));
@@ -23,7 +25,7 @@ function Card({ element }) {
       if (pinnedMusic?.length >= 4) {
       }
       updatedPinnedMusic = pinnedMusic;
-      updatedPinnedMusic.push(element);
+      updatedPinnedMusic?.push(element);
       setpinnedMusic(updatedPinnedMusic);
       localStorage.setItem("pinnedMusic", JSON.stringify(updatedPinnedMusic));
     }

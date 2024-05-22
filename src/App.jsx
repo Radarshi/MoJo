@@ -1,9 +1,11 @@
 import { useContext, useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Gitlogo from './assets/github-mark.png';
 import Card from "./Components/Card";
 import Navbar from "./Components/Navbar";
+import Signup from './Components/Signup.jsx';
 import { MusicContext } from "./Context";
-import Gitlogo from './assets/github-mark.png';
 
 function App() {
   const [keyword, setKeyword] = useState("");
@@ -84,6 +86,9 @@ function App() {
 
   return (
     <>
+      <Routes>
+        <Route path="/signin" element={<Signup/>}></Route>
+      </Routes>
       <Navbar
         keyword={keyword}
         setKeyword={setKeyword}
@@ -104,7 +109,7 @@ function App() {
           </div>
         </div>
         <div className="row">
-          {tracks.map((element) => {
+          {tracks?.map((element) => {
             return <Card key={element.id} element={element} />;
           })}
         </div>

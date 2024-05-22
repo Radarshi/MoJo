@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mui/material": "^5.15.18",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.0",
+    "react-router-dom": "^6.23.1",
+    "styled-components": "^6.1.11",
     "web-vitals": "^3.5.2"
   },
   "devDependencies": {
