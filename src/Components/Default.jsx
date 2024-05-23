@@ -141,16 +141,6 @@ function Default() {
           </div>
         </div>
         <Home></Home>
-        <div className="row">
-          {tracks?.map((element) => {
-            return <Card key={element.id} element={element} />;
-          })}
-        </div>
-        <div className="row">
-          {tracks?.map((element) => {
-            return <Card key={element.id} element={element} />;
-          })}
-        </div>
       </div></>
   )
 }
