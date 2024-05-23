@@ -1,12 +1,6 @@
 .form_container{
     width: 30%;
 }
-.return{
-    width: 20px;
-}
-.return{
-    transition: all 1s;
-}
 @media screen and (max-width:1000px){
     .form_container{
         width: 45%;
