@@ -1,3 +1,17 @@
-.container-chu{
-    margin-top: 800px;
+.container-chu {
+  margin-top: 100px;
+}
+
+/* For screens larger than 800px */
+@media (min-width: 800px) {
+  .container-chu {
+    margin-top: 450px;
+  }
+}
+
+/* For mobile screens (e.g., max-width 600px) */
+@media (max-width: 600px) {
+  .container-chu {
+    margin-top: 95px;
+  }
 }
