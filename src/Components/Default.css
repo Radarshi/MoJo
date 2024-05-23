@@ -5,13 +5,13 @@
 /* For screens larger than 800px */
 @media (min-width: 800px) {
   .container-chu {
-    margin-top: 450px;
+    margin-top: 700px;
   }
 }
 
 /* For mobile screens (e.g., max-width 600px) */
 @media (max-width: 600px) {
   .container-chu {
-    margin-top: 95px;
+    margin-top: 180px;
   }
 }

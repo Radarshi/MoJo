@@ -14,7 +14,7 @@ function Signup() {
             <Link to="/" element={<Default />}>
               <img src={Return} alt="" className="return" />
             </Link>
-            <h3 className="text-center text-black">Sign In</h3>
+            <h3 className="text-center text-black">Sign Up</h3>
             <div className="mb-2">
               <label htmlFor="name" className="text-black">
                 Name
@@ -71,8 +71,8 @@ function Signup() {
                 Forgot Password?
               </a>
               <Link
-                to="/signin"
-                element={<Login />}
+                to="/login"
+                
                 style={{ textDecoration: "none", paddingLeft: "3px" }}
               >
                 Log In

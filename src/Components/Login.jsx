@@ -61,7 +61,7 @@ function Login() {
               Forgot Password?
             </a>
             <Link
-              to="/signin"
+              to="/signup"
               element={<Signup />}
               style={{ textDecoration: "none", paddingLeft: "2px" }}
             >

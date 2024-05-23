@@ -64,7 +64,7 @@ const Navbar = ({ keyword, handleKeyPress, setKeyword, fetchMusicData }) => {
               {" "}
               Search
             </button>
-            <Link className="signIn" to="/signin">
+            <Link className="signIn" to="/signup">
               <button
                 type="button"
                 className="btn  signup btn-outline-success"

@@ -102,6 +102,9 @@ function Default() {
             </div>
           </div>
         </div>
+        {tracks?.length > 0 && <div className="flex justify-center items-center py-5">
+         <h2 className='text-white text-3xl text-center'>Your Search Results</h2>
+        </div>}
         <div className="row">
           {tracks?.map((element) => {
             return <Card key={element.id} element={element} />;

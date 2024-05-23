@@ -24,6 +24,7 @@ function Home() {
     const handleScroll = () => {
       let value = window.scrollY;
 
+      // Update the position of the elements
       leaf.style.top = -value * 1.5 + "px";
       leaf.style.left = value * 1.5 + "px";
       hill5.style.left = value * 1.5 + "px";
@@ -43,7 +44,7 @@ function Home() {
 
   return (
     <>
-      <section className="first relative h-screen overflow-hidden bg-green-500">
+      <section className="first relative h-screen overflow-x-hidden bg-green-500">
         <img
           src={hill1Img}
           alt=""
