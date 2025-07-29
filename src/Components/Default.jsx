@@ -1,10 +1,12 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import "../App.css";
 import { MusicContext } from "../Context.jsx";
 import Card from "./Card.jsx";
 import './Default.css';
 import Home from './Home.jsx';
 import Navbar from './Navbar.jsx';
+
+
 
 function Default() {
     const [keyword, setKeyword] = useState("");
@@ -19,6 +21,7 @@ function Default() {
     const setpinnedMusic = musicContext.setPinnedMusic;
     const resultOffset = musicContext.resultOffset;
     const setResultOffset = musicContext.setResultOffset;
+    const no_code_api = import.meta.env.VITE_API_KEY;
   
     const fetchMusicData = async () => {
       setTracks([]);
@@ -26,19 +29,16 @@ function Default() {
       setIsLoading(true);
       try {
         const response = await fetch(
-          `https://api.spotify.com/v1/search?q=${keyword}&type=track&offset=${resultOffset}`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
+      `https://v1.nocodeapi.com/radarshi/spotify/${no_code_api}/search?q=${keyword}&type=track&offset=${resultOffset}`
+    );
   
         if (!response.ok) {
           throw new Error("Failed to fetch music data");
         }
   
         const jsonData = await response.json();
+        console.log(jsonData);
+        
   
         setTracks(jsonData.tracks.items);
       } catch (error) {

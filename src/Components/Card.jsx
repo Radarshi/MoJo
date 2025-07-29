@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { MusicContext } from "../Context";
 import like from "../assets/like.png";
 import pin from "../assets/pin.png";
@@ -8,6 +8,10 @@ function Card({ element }) {
   const musicContext = useContext(MusicContext);
   const { likedMusic, setLikedMusic, pinnedMusic, setPinnedMusic } =
     musicContext;
+
+    // const PinnedMusic = () => {
+    //   alert("Your Music is Pinned")
+    // }
 
   const handlePin = () => {
     let pinnedMusic = JSON.parse(localStorage.getItem("pinnedMusic")) || [];
@@ -69,7 +73,8 @@ function Card({ element }) {
                     pinnedMusic?.some((item) => item.id === element.id)
                       ? "active"
                       : ""
-                  }`}
+                  }`
+                }
                 />
               </button>
               <button onClick={handleLike} className="btn btn-outline-dark">
