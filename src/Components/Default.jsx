@@ -58,7 +58,7 @@ function Default() {
     useEffect(() => {
       const fetchToken = async () => {
         try {
-          const response = await fetch("https://accounts.spotify.com/api/token", {
+          const response = await fetch("/api/token", {
             method: "POST",
             headers: {
               "Content-Type": "application/x-www-form-urlencoded",
